@@ -1,0 +1,174 @@
+/* Header */
+
+header {
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+/* Box */
+
+.box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgba(203, 181, 203, 0.366);
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation */
+
+.box:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.icon-box {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-box:hover {
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.icon-box:hover .icon {
+    color: white; 
+    transition: color 0.3s ease; 
+}
+
+
+.icon-box:hover .icon-sub,
+.icon-box:hover .policy {
+    color: white;
+}
+
+.icon-box:hover .line {
+    border-top-color: rgba(255, 255, 255, 0.482); /* Cambio del colore della linea */
+}
+
+.icon-box:hover .bef-arrow,
+.icon-box:hover .arrow{
+    color: white; 
+}
+
+.line:hover a,
+.line:hover .bef-arrow {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* icon dentro box */
+
+
+.icon-box {
+    display: flex;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+
+.icon {
+    position: absolute;
+    padding: 35%;
+}
+
+.icon-sub {
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.policy {
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
+.line {
+    max-width: 100%;
+    border-top: 1px solid rgba(163, 99, 222, 0.482);
+    margin-top: 2rem;
+}
+
+.bef-arrow {
+    font-size: small;
+    color: #9252c7;
+    margin-top: 1rem;
+}
+
+.arrow-first {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 120px;
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 60px;
+}
+
+.arrow-third {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 165px; 
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Lista */
+
+.list {
+    margin-bottom: 30px;
+}
+
+.scrollable-list {
+    max-height: 400px; 
+    overflow-y: auto; /* Aggiunge la barra di scorrimento solo quando necessario */
+    padding: 40px; 
+}
+
+.scrollable-list::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+    background-color: #a070dcf5; 
+    border-radius: 6px;
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Colore della traccia */
+}
+
+
+/* FORM */
+
+.frage {
+    font-size: 10px;
+    color: #9252c7;
+    padding: 2rem;
+}
+
+.frage1 {
+    font-size: 10px;
+    color: black;
+}
+
+.fragearrow {
+    margin-left: 500px;
+    margin-top: -50px;
+}
+
