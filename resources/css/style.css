@@ -172,3 +172,24 @@ a {
     margin-top: -50px;
 }
 
+/* Form domanda n. 4 */
+
+.counter {
+    position: relative;
+}
+
+.char-counter {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #999; /* Colore del testo grigio */
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+

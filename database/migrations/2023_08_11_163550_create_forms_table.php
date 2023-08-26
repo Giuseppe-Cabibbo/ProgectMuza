@@ -14,7 +14,17 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->string('place');
+            $table->dateTime('date');
+            $table->string('category');
+            $table->string('description');
+            $table->string('where');
+            $table->string('alarm');
+            $table->string('people');
+            $table->string('mode');
+            $table->string('confirm');
+            $table->string('info');
             $table->timestamps();
+            
         });
     }
 

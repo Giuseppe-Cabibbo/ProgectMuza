@@ -11,5 +11,14 @@ class Form extends Model
 
     protected $fillable =[
         'place',
+        'date',
+        'category',
+        'where',
+        'alarm',
+        'people',
+        'mode',
+        'confirm',
+        'info'
     ];
+    
 }
