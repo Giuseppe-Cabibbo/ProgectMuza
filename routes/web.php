@@ -19,3 +19,6 @@ Route::get('/', [PubblicController::class, 'home'])->name('homepage');
 
 Route::get('/form/create', [FormController::class, 'create'])->name('form.create');
 
+Route::get('/register', [PubblicController::class, 'index'])->name('register');
+
+

@@ -7,16 +7,14 @@
                     <strong>BUILDING TRUST WITH TRASPARENCY</strong>
                     <h1>Whistleblowing Form</h1>
                     <p>Attraverso questo Portale puoi effettuare segnalazioni di comportamenti o eventi che possono configurarsi come vIolazioni d i leggi o regolamenti (nazionali o dell'Unione europea), o di procedure aziendali o comunque non compatibili con un comportamento eticamente corretto. Ti ricordiamo che, a fronte di specifici pre-requisiti, le segnalazioni possono essere indirizzate anche all'esterno della Società.</p>
+                    @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                    @endif
                 </div>
             </div>
         </div>
-
-        {{-- @if(session()->has('message'))
-            <div class="alert alert-success">
-                {{ session('message') }}
-            </div>
-        @endif --}}
-
     </header>
     
     <main>
@@ -43,9 +41,20 @@
                         <h4 class="icon-sub">Posta Sicura</h4>
                     </div>
                     <div class="line">
-                        <a href="{{route('register')}}">
+                        <a href="#" id="openModal" data-url="{{ route('register') }}">
                             <p class="bef-arrow">Vedi aggiornamenti segnalazioni<i class="arrow fa-solid fa-arrow-right" style="color: #9252c7;"></i></p>
                         </a>
+                    </div>
+                    
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" id="backButton">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Contenuto modale della pagina di registrazione -->
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="box col-12 col-md-auto">

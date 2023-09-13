@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Form;
 use Livewire\Component;
 
+
 class CreateForm extends Component
 {
     public $step = 1;
@@ -76,17 +77,12 @@ class CreateForm extends Component
     }
 
     public function createFormStep2() {
-        // try {
+        $this->validate();
         $this->step = 3;
-        // dd('Record creato con successo');
-    // } catch (\Exception $e) {
-    //     dd($e->getMessage());
-    // }
-        // return redirect
-        // ->with('message', 'Hai inviato la tua segnalazione');
     }
 
     public function createFormStep3(){
+        $this->validate();
         $this->step = 4; 
     }
 
@@ -114,7 +110,15 @@ class CreateForm extends Component
     }
 
     public function createFormStep10(){
+        // try {
+        $this->validate();
         $this->step = 1; 
+        // dd('Record creato con successo');
+        // } catch (\Exception $e) {
+        //     dd($e->getMessage());
+        // }
+        session()->flash('message', 'Hai inviato la tua segnalazione');
+        return redirect()->route('homepage');
     }
 
 

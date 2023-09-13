@@ -29,7 +29,7 @@
                                 <option value="Altro">Altro</option>
                             </select>
                             {{-- @error('place')
-                                <span class="error bg-danger">{{$message}}</span>
+                                <span class="error bg-danger">{{ $message }}</span>
                             @enderror --}}
                         </div>
                     </form>
@@ -42,8 +42,8 @@
                             <button wire:click="nextStep" type="submit" class="btn btn-unstyled"><span><i class="arrow-third fa-solid fa-arrow-right fragearrow" style="color: #9252c7;"></i></span></button>
                             <label class="form-label">Quando si è verificato l’evento che intendi segnalare (data/periodo)?</label>
                             <input type="date" class="form-control my-5" wire:model="date" name="date">
-                            {{-- @error('place')
-                                <span class="error bg-danger">{{$message}}</span>
+                            {{-- @error('date')
+                                <span class="error bg-danger">{{ $message }}</span>
                             @enderror --}}
                         </div>
                     </form>
@@ -76,8 +76,8 @@
                                 <option value="Altri illeciti amministrativi, contabili, civili e penali [specificare]">Altri illeciti amministrativi, contabili, civili e penali [specificare]</option>
                                 <option value="Altro [specificare]">Altro [specificare]</option>
                             </select>
-                            {{-- @error('place')
-                                <span class="error bg-danger">{{$message}}</span>
+                            {{-- @error('category')
+                                <span class="error bg-danger">{{ $message }}</span>
                             @enderror --}}
                         </div>
                     </form>
@@ -91,7 +91,7 @@
                             <label class="form-label">Descrizione dell’evento (fatto o omissione) che intendi segnalare</label>
                             <textarea class="form-control my-5" rows="5" wire:model="description" name="description" placeholder="Descrivi qui..."></textarea>
                             <div class="char-counter">0 / 5000</div>
-                            {{-- @error('place')
+                            {{-- @error('description')
                                 <span class="error bg-danger">{{$message}}</span>
                             @enderror --}}
                         </div>
@@ -110,7 +110,7 @@
                                 <option value="Azienda">In Azienda</option>
                                 <option value="All'esterno dell'azienda">All'esterno dell'azienda</option>
                             </select>
-                            {{-- @error('place')
+                            {{-- @error('where')
                                 <span class="error bg-danger">{{$message}}</span>
                             @enderror --}}
                         </div>
@@ -136,7 +136,7 @@
                               No
                             </label>
                           </div>
-                        {{-- @error('place')
+                        {{-- @error('alarm')
                             <span class="error bg-danger">{{$message}}</span>
                         @enderror --}}
                     </div>
@@ -151,7 +151,7 @@
                             <label class="form-label">Chi è la persona o le persone a cui la violazione si riferisce (Es. Nome, Cognome, Qualifica o altra informazione utile all’identificazione)?</label>
                             <textarea class="form-control my-5" rows="5" wire:model="people" name="people" placeholder="Scrivi qui..."></textarea>
                             <div class="char-counter">0 / 5000</div>
-                            {{-- @error('place')
+                            {{-- @error('people')
                                 <span class="error bg-danger">{{$message}}</span>
                             @enderror --}}
                         </div>
@@ -166,7 +166,7 @@
                             <label class="form-label">Con che modalità sei venuto a conoscenza dell’evento?</label>
                             <textarea class="form-control my-5" rows="5" wire:model="mode" name="mode" placeholder="Scrivi qui..."></textarea>
                             <div class="char-counter">0 / 5000</div>
-                            {{-- @error('place')
+                            {{-- @error('mode')
                                 <span class="error bg-danger">{{$message}}</span>
                             @enderror --}}
                         </div>
@@ -181,7 +181,7 @@
                             <label class="form-label">Ci sono eventuali altri soggetti che possono confermare o riferire altri elementi relativi all’evento?  Se sì, quali (Nome, Cognome, Qualifica)?</label>
                             <textarea class="form-control my-5" rows="5" wire:model="confirm" name="confirm" placeholder="Scrivi qui..."></textarea>
                             <div class="char-counter">0 / 5000</div>
-                            {{-- @error('place')
+                            {{-- @error('confirm')
                                 <span class="error bg-danger">{{$message}}</span>
                             @enderror --}}
                         </div>
@@ -196,7 +196,7 @@
                             <label class="form-label">Puoi fornirci informazioni aggiuntive?</label>
                             <textarea class="form-control my-5" rows="5" wire:model="info" name="info" placeholder="Scrivi qui..."></textarea>
                             <div class="char-counter">0 / 5000</div>
-                            {{-- @error('place')
+                            {{-- @error('info')
                                 <span class="error bg-danger">{{$message}}</span>
                             @enderror --}}
                         </div>
@@ -207,3 +207,4 @@
         </div>
     </div>
 </div>
+

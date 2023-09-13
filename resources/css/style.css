@@ -26,7 +26,6 @@ h1 {
 
 .box:hover {
     background-color: blueviolet;
-    color: white;
 }
 
 .icon-box {
@@ -185,6 +184,71 @@ a {
     color: #999; /* Colore del testo grigio */
     font-size: 12px;
 }
+
+
+/* Modal */
+
+
+/* Stili per la finestra modale */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto; /* Aggiunto overflow per consentire lo scrolling all'interno della modale */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%; /* Imposta la larghezza della finestra modale al 90% del genitore */
+    max-width: 500px; /* Larghezza massima */
+    padding: 20px; /* Spaziatura interna */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Aggiunto ombra */
+}
+
+.modal-header {
+    padding: 15px;
+    background-color: #f5f2f7;
+    border-radius: 5px 5px 0 0; /* Bordi arrotondati solo in alto */
+}
+
+.modal-header .close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 15px;
+}
+
+/* Aggiunte regole CSS per H1 e paragrafo */
+.modal-body h1 {
+    font-size: 24px; /* Imposta la dimensione del font per H1 */
+    margin-top: 0; /* Rimuove il margine superiore predefinito di H1 */
+}
+
+.modal-body p {
+    font-size: 14px; /* Imposta la dimensione del font per il paragrafo */
+    margin-top: 10px; /* Aggiunge uno spazio superiore al paragrafo */
+}
+
+
+
+
+
+
+
 
 
 
